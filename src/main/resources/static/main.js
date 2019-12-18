@@ -28,6 +28,8 @@ $("#submit").click(function(){
 	document.location.reload(true);
 });
 
+
+
 function erreur()
 {	
 	document.location.href = "error.html"
@@ -82,4 +84,14 @@ function chargerVoitureColor (voiture)
     document.getElementById("couleur").appendChild(cardTitle);
 }
 
+var champsRecherche = document.getElementById("new-id");
+var rechercheId = document.getElementById("submit-id");
+
+champsRecherche.addEventListener('click', function(event){	
+	$.ajax({
+		url: "/garage/id" + rechercheId.value,
+		success: (chargerVoitureType),
+		error: (erreur)
+	});
+});
 

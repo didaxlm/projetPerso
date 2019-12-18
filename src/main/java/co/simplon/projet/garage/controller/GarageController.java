@@ -53,6 +53,17 @@ public class GarageController
 		return listeVoiture;
 	}
 	
+	@RequestMapping("/id")
+	public ResponseEntity<Car> voitureId (@RequestParam(value="id")int id)
+	{
+		for (Car car : listeVoiture) {
+			if (car.getId() == id) {
+				return ResponseEntity.ok(car);
+			}
+		}
+		return ResponseEntity.notFound().build();
+	}
+	
 	@RequestMapping("/erreur")
 	public ResponseEntity<String> erreur()
 	{
