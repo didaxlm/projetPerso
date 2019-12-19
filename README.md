@@ -16,6 +16,8 @@ http://localhost:8080/garage/newCar?marque=audi&modele1=A3&modele2=A4&modele3=A6
 
 http://localhost:8080/garage/id
 
+file:///C:/Users/didax/Dropbox/EclipseProjects/garage/src/main/resources/templates/error.html
+
 Diagramme :
 
 ![alt text](https://zupimages.net/up/19/51/vzjt.png)
