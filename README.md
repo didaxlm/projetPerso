@@ -11,7 +11,9 @@ si celle-ci n'existe pas dans la base de donnée, il y aura une redirection vers 
 liste des endpoints :
 
 http://localhost:8080/garage/cars
+
 http://localhost:8080/garage/newCar?marque=audi&modele1=A3&modele2=A4&modele3=A6&color=bleu
+
 http://localhost:8080/garage/id
 
 Diagramme :

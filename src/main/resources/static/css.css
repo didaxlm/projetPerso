@@ -1,9 +1,12 @@
 body{
-    background-image: url("img/voiture.jpg");
+    background-image: url("img/voiture1.jpg");
     padding: 100px;
     position: center;
     left: 10px;
 }
 h1{
-    color : red;
+    color : green;
+}
+label{
+	color : red;
 }
