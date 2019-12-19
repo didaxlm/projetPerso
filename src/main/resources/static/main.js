@@ -32,7 +32,7 @@ $("#submit").click(function(){
 
 function erreur()
 {	
-	document.location.href = "error.html"
+	document.location.href = "erreur.html"
 }
 /**
  * remplit le dropdown menu avec les marques de toutes les voitures de la liste
