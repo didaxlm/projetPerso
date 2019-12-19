@@ -14,3 +14,6 @@ http://localhost:8080/garage/cars
 http://localhost:8080/garage/newCar?marque=audi&modele1=A3&modele2=A4&modele3=A6&color=bleu
 http://localhost:8080/garage/id
 
+Diagramme :
+
+![alt text](https://zupimages.net/up/19/51/vzjt.png)

@@ -64,10 +64,10 @@ public class GarageController
 		return ResponseEntity.notFound().build();
 	}
 	
-	@RequestMapping("/erreur")
+	/*@RequestMapping("/erreur")
 	public ResponseEntity<String> erreur()
 	{
 		return ResponseEntity.notFound().build();
-	}
+	}*/
 }
 

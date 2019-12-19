@@ -1,0 +1,9 @@
+body{
+    background-image: url("img/voiture.jpg");
+    padding: 100px;
+    position: center;
+    left: 10px;
+}
+h1{
+    color : red;
+}

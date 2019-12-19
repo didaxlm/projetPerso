@@ -87,9 +87,9 @@ function chargerVoitureColor (voiture)
 var champsRecherche = document.getElementById("new-id");
 var rechercheId = document.getElementById("submit-id");
 
-champsRecherche.addEventListener('click', function(event){	
+rechercheId.addEventListener('click', function(event){	
 	$.ajax({
-		url: "/garage/id" + rechercheId.value,
+		url: "/garage/id" + champsRecherche.value,
 		success: (chargerVoitureType),
 		error: (erreur)
 	});
