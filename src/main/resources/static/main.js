@@ -48,9 +48,7 @@ function chargerMenu()
     newMenuItem.addEventListener('click', function (event) 
     {
         // les actions à effectuer lorsqu'on clique sur un element du dropdown
-        chargerVoitureType (voiture);
-        chargerVoitureId (voiture);
-        chargerVoitureColor(voiture);     
+    	chargerTout(voiture);     
     });
     document.getElementById("dropdown-list").appendChild(newMenuItem);
   });
@@ -84,13 +82,21 @@ function chargerVoitureColor (voiture)
     document.getElementById("couleur").appendChild(cardTitle);
 }
 
+function chargerTout (voiture)
+{
+	chargerVoitureType(voiture);
+	chargerVoitureId(voiture);
+	chargerVoitureColor(voiture);
+}
+
 var champsRecherche = document.getElementById("new-id");
 var rechercheId = document.getElementById("submit-id");
 
+
 rechercheId.addEventListener('click', function(event){	
 	$.ajax({
-		url: "/garage/id" + champsRecherche.value,
-		success: (chargerVoitureType),
+		url: "/garage/id?id=" + champsRecherche.value,
+		success: (chargerTout),
 		error: (erreur)
 	});
 });
