@@ -14,7 +14,7 @@ http://localhost:8080/garage/cars
 
 http://localhost:8080/garage/newCar?marque=audi&modele1=A3&modele2=A4&modele3=A6&color=bleu
 
-http://localhost:8080/garage/id
+http://localhost:8080/erreur.html
 
 Diagramme :
 

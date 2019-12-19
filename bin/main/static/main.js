@@ -16,7 +16,7 @@ $(document).ready(function ()
         chargerMenu();
     });
 });
-
+// Ajout d'une nouvelle voiture
 $("#submit").click(function(){
 	$.post("/garage/newCar", {
 		marque: $("#new-marque").val(),
@@ -29,7 +29,7 @@ $("#submit").click(function(){
 });
 
 
-
+// Fonction redirigeant vers la page erreur html
 function erreur()
 {	
 	document.location.href = "erreur.html"
@@ -53,7 +53,7 @@ function chargerMenu()
     document.getElementById("dropdown-list").appendChild(newMenuItem);
   });
 }
-
+// Les modèles de la voiture
 function chargerVoitureType (voiture)
 {
     console.log(voiture);
@@ -63,7 +63,7 @@ function chargerVoitureType (voiture)
 
     document.getElementById("modele").appendChild(cardTitle);
 }
-
+// ID de la voiture (auto incrément)
 function chargerVoitureId (voiture)
 {
     let cardTitle = document.createElement('p');
@@ -72,7 +72,7 @@ function chargerVoitureId (voiture)
 
     document.getElementById("id").appendChild(cardTitle);
 }
-
+// Couleur de la voiture
 function chargerVoitureColor (voiture)
 {
     let cardTitle = document.createElement('li');
@@ -81,14 +81,14 @@ function chargerVoitureColor (voiture)
 
     document.getElementById("couleur").appendChild(cardTitle);
 }
-
+// Toutes les caractéristiques
 function chargerTout (voiture)
 {
 	chargerVoitureType(voiture);
 	chargerVoitureId(voiture);
 	chargerVoitureColor(voiture);
 }
-
+// Recherche par Id
 var champsRecherche = document.getElementById("new-id");
 var rechercheId = document.getElementById("submit-id");
 
